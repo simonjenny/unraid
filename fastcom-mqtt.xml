@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>fastcom-mqtt</Name>
+  <Repository>simonjenny/fastcom-mqtt</Repository>
+  <Registry>https://hub.docker.com/r/simonjenny/fastcom-mqtt/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/simonjenny/fastcom-mqtt/</Support>
+  <Project>https://github.com/simonjenny/fastcom-mqtt</Project>
+  <Overview>
+    Docker Container with Fast.com CLI sending data directly to MQTT Broker
+
+The Docker needs the following ENV Variables:
+
+SLEEP : Seconds between measures
+MQTT_SERVER : IP/Address of MQTT Server
+MQTT_DOWN : Topic for Download Value
+MQTT_UP : Topic for Upload Value
+
+Optional:
+
+MQTT_USER: MQTT Username
+MQTT_PASS: MQTT Password
+</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/simonjenny/fastcom-mqtt/master/fastlogo.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled />
+  <DonateText/>
+  <DonateLink/>
+  <Description>
+    Docker Container with Fast.com CLI sending data directly to MQTT Broker
+
+The Docker needs the following ENV Variables:
+
+SLEEP : Seconds between measures
+MQTT_SERVER : IP/Address of MQTT Server
+MQTT_DOWN : Topic for Download Value
+MQTT_UP : Topic for Upload Value
+
+Optional:
+
+MQTT_USER: MQTT Username
+MQTT_PASS: MQTT Password
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>MQTT_UP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MQTT_DOWN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>MQTT_SERVER</Name>
+      <Mode/>
+    </Variable>
+     <Variable>
+      <Value/>
+      <Name>MQTT_USER</Name>
+      <Mode/>
+    </Variable>
+     <Variable>
+      <Value/>
+      <Name>MQTT_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3600</Value>
+      <Name>SLEEP</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="MQTT_SERVER" Target="MQTT_SERVER" Default="" Mode="" Description="Container Variable: MQTT_SERVER" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT_UP" Target="MQTT_UP" Default="" Mode="" Description="Container Variable: MQTT_UP" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT_DOWN" Target="MQTT_DOWN" Default="" Mode="" Description="Container Variable: MQTT_DOWN" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT_USER" Target="MQTT_UP" Default="" Mode="" Description="Container Variable: MQTT_UP" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="MQTT_PASS" Target="MQTT_DOWN" Default="" Mode="" Description="Container Variable: MQTT_DOWN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SLEEP" Target="SLEEP" Default="" Mode="" Description="Container Variable: sleep" Type="Variable" Display="always" Required="true" Mask="false">3600</Config>
+</Container>

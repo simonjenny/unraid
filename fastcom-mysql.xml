@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>fastcom-mysql</Name>
+  <Repository>simonjenny/fastcom-mysql</Repository>
+  <Registry>https://hub.docker.com/r/simonjenny/fastcom-mysql/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/simonjenny/fastcom-mysql/</Support>
+  <Project>https://github.com/simonjenny/fastcom-mysql</Project>
+  <Overview>
+  Docker Container with Fast.com CLI sending data to a MySQL Server
+
+  The Docker needs the following ENV Variables:
+  SLEEP : Seconds between measures
+  MYSQL_SERVER : IP/Address of MySQL Server
+  MYSQL_USER: MySQL Username
+  MYSQL_PASS: MySQL Password
+  MYSQL_DATABASE: MySQL Database
+  MYSQL_TABLE: MySQL Table
+  LOC: Name of Probe (eg. network/core or network/edge)
+
+  Important:
+  Database Table needs to have the following schema:
+
+  CREATE TABLE `YOURTABLENAME` (
+    `timestamp` timestamp NULL DEFAULT current_timestamp(),
+    `loc` varchar(50) COLLATE utf8mb4_bin DEFAULT NULL,
+    `download` float DEFAULT NULL,
+    `upload` float DEFAULT NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin
+  </Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/simonjenny/fastcom-mysql/master/fastlogo.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled />
+  <DonateText/>
+  <DonateLink/>
+  <Description>
+  Docker Container with Fast.com CLI sending data to a MySQL Server
+
+  The Docker needs the following ENV Variables:
+  SLEEP : Seconds between measures
+  MYSQL_SERVER : IP/Address of MySQL Server
+  MYSQL_USER: MySQL Username
+  MYSQL_PASS: MySQL Password
+  MYSQL_DATABASE: MySQL Database
+  MYSQL_TABLE: MySQL Table
+  LOC: Name of Probe (eg. network/core or network/edge)
+
+  Important:
+  Database Table needs to have the following schema:
+
+  CREATE TABLE `YOURTABLENAME` (
+    `timestamp` timestamp NULL DEFAULT current_timestamp(),
+    `loc` varchar(50) COLLATE utf8mb4_bin DEFAULT NULL,
+    `download` float DEFAULT NULL,
+    `upload` float DEFAULT NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value />
+      <Name>MYSQL_SERVER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value />
+      <Name>MYSQL_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value />
+      <Name>MYSQL_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value />
+      <Name>MYSQL_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value />
+      <Name>MYSQL_TABLE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>network/core</Value>
+      <Name>LOC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3600</Value>
+      <Name>SLEEP</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="MYSQL_SERVER" Target="MYSQL_SERVER" Default="" Mode="" Description="Container Variable: MYSQL_SERVER" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="" Mode="" Description="Container Variable: MYSQL_USER" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MYSQL_PASS" Target="MYSQL_PASS" Default="" Mode="" Description="Container Variable: MYSQL_PASS" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="" Mode="" Description="Container Variable: MYSQL_DATABASE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MYSQL_TABLE" Target="MYSQL_TABLE" Default="" Mode="" Description="Container Variable: MYSQL_TABLE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LOC" Target="LOC" Default="" Mode="" Description="Container Variable: LOC" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SLEEP" Target="SLEEP" Default="" Mode="" Description="Container Variable: sleep" Type="Variable" Display="always" Required="true" Mask="false">3600</Config>
+</Container>
