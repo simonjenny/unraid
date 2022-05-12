@@ -2,8 +2,7 @@
 <Maintainer>
   <Icon>https://raw.githubusercontent.com/simonjenny/unraid/main/avatar.jpg</Icon>
   <Profile>
-    Swiss Developer. More @ https://simonjenny.dev
+    Swiss Developer
   </Profile>
-  <DonateLink></DonateLink>
-  <DonateText></DonateText>
+  <WebPage>https://simonjenny.dev</WebPage>
 </Maintainer>
